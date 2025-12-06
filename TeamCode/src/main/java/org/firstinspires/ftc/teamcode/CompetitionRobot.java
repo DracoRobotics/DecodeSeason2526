@@ -64,7 +64,7 @@ import com.qualcomm.robotcore.util.ElapsedTime;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
-@TeleOp(name="CompetitionRobot", group="Linear OpMode")
+@TeleOp(name="CompetitionRobot", group="AACompetition")
 public class CompetitionRobot extends LinearOpMode {
 
     // Declare OpMode members for each of the 4 motors.

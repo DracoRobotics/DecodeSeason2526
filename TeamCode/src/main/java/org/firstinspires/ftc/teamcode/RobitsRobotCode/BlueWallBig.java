@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 
 @Autonomous
-public class BlueSmallRobitsRobotAutonomus extends LinearOpMode {
+public class BlueWallBig extends LinearOpMode {
 
     DcMotor CatapultMotor;
 
@@ -43,8 +43,9 @@ public class BlueSmallRobitsRobotAutonomus extends LinearOpMode {
     }
 
     public void CatapultLoad() {
-        CatapultMotor.setPower(1);
         indexer.setPosition(0);
+        CatapultMotor.setPower(1);
+
     }
 
     public void CatapultUnload(){
@@ -84,25 +85,16 @@ public class BlueSmallRobitsRobotAutonomus extends LinearOpMode {
         waitForStart();
 
         DriveForward();
-        sleep(1750);
+        sleep(150);
         StopDriving();
-        TurnRight();
-        sleep(250);
-        DriveForward();
-        sleep(1000);
-        StopDriving();
-        sleep(400);
-
         CatapultShoot();
         CatapultShoot();
         CatapultShoot();
-        sleep(100);
         TurnLeft();
-        sleep(60);
+        sleep(250);
         DriveBackward();
-        sleep(2400);
+        sleep(2000);
         StopDriving();
-
 
 
 //        TurnRight();
